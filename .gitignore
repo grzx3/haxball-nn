@@ -1,0 +1,15 @@
+# Ignore CLion / CMake build system
+.idea/
+cmake-build-*/
+
+# Ignore library files
+lib/
+
+# Ignore compiled and temporary files
+*.exe
+*.obj
+*.o
+*.log
+*.dll
+*.lib
+*.pdb

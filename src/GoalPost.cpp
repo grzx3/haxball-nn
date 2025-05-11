@@ -20,8 +20,11 @@ void GoalPost::createPhysics(b2World& world) {
     b2FixtureDef fixture;
     fixture.shape = &circle;
     fixture.density = 0.f;
-    fixture.restitution = 0.5f;
+    fixture.restitution = 0.0f;
     fixture.friction = 0.5f;
+    fixture.filter.categoryBits = CATEGORY_GOALPOST;
+    fixture.filter.maskBits = CATEGORY_BALL | CATEGORY_PLAYER;
+
 
     body->CreateFixture(&fixture);
 }

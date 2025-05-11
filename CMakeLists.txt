@@ -24,6 +24,14 @@ add_executable(haxball_nn
     src/GoalPost.h
     src/Player.cpp
     src/Player.h
+        src/Pitch.cpp
+        src/Pitch.h
+        src/GoalLine.cpp
+        src/GoalLine.h
+        src/ContactListener.cpp
+        src/ContactListener.h
+        src/Game.cpp
+        src/Game.h
 )
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")

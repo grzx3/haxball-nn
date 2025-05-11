@@ -7,4 +7,6 @@ public:
     Ball(const sf::Vector2f& position);
     void update(float dt) override;
     void createPhysics(b2World& world) override;
+    void reset(const sf::Vector2f& position);
+    bool markedForReset = false;
 };
